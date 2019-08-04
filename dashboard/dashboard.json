@@ -1,0 +1,223 @@
+{
+   "dashboards": [{
+      "autoswitchEnabled": false,
+      "columnCount": 1,
+      "columnProportion": "1",
+      "creationTime": 1564927254265,
+      "dashboardNavigations": {},
+      "description": "High level configuration information for all the available network components in the environment.",
+      "disabled": false,
+      "gridsterMaxColumns": 12,
+      "hidden": true,
+      "homeTab": false,
+      "id": "a9dfb2bb-5cac-4370-90bb-d46378d56d37",
+      "importAttempts": 0,
+      "importComplete": true,
+      "isDefault": false,
+      "locked": false,
+      "name": "Configuration & Compliance/DVSwitches-Overview",
+      "namePath": "Configuration & Compliance",
+      "rank": 106,
+      "shared": false,
+      "states": [],
+      "temporary": false,
+      "userId": "17d8ac6b-3e85-45c0-a702-3dafe18a68a6",
+      "widgetInteractions": [
+         {
+            "type": "resourceId",
+            "widgetIdProvider": "bb4bd75e-c412-49fe-8e3f-228147bccda2",
+            "widgetIdReceiver": "bc98822d-99e0-44ed-848b-9b3503ea2c42"
+         },
+         {
+            "type": "resourceId",
+            "widgetIdProvider": "bb4bd75e-c412-49fe-8e3f-228147bccda2",
+            "widgetIdReceiver": "330b7e82-2618-49ce-a029-e3dc6791b187"
+         },
+         {
+            "type": "resourceId",
+            "widgetIdProvider": "bb4bd75e-c412-49fe-8e3f-228147bccda2",
+            "widgetIdReceiver": "3595de46-cbba-4c7b-8c4c-2f2e6bbd8b2f"
+         }
+      ],
+      "widgets": [
+         {
+            "collapsed": false,
+            "config": {
+               "additionalColumns": [
+                  {
+                     "boxLabel": "Used Ports",
+                     "metricKey": "summary|used_num_ports",
+                     "metricName": "Summary|Used Number of Ports",
+                     "resourceKindId": "resourceKind:id:0_::_"
+                  },
+                  {
+                     "boxLabel": "ESXi Hosts",
+                     "metricKey": "summary|total_number_hosts",
+                     "metricName": "Summary|Total Number of Hosts",
+                     "resourceKindId": "resourceKind:id:0_::_"
+                  },
+                  {
+                     "boxLabel": "NIC Teaming Policy",
+                     "metricKey": "capability|nicTeamingPolicy",
+                     "metricName": "Capability|NIC Teaming Policy",
+                     "resourceKindId": "resourceKind:id:0_::_"
+                  }
+               ],
+               "customFilter": {
+                  "excludedResources": null,
+                  "filter": [{
+                     "filterTypes": [
+                        {
+                           "condition": "GREATER_THAN",
+                           "filterType": "metrics",
+                           "metricKey": "summary|total_number_hosts",
+                           "metricValue": {
+                              "isStringMetric": false,
+                              "value": 1
+                           }
+                        },
+                        {
+                           "condition": "GREATER_THAN",
+                           "filterType": "metrics",
+                           "metricKey": "summary|used_num_ports",
+                           "metricValue": {
+                              "isStringMetric": false,
+                              "value": 1
+                           }
+                        }
+                     ],
+                     "resourceKind": "002006VMWAREVmwareDistributedVirtualSwitch"
+                  }],
+                  "includedResources": null
+               },
+               "depth": 1,
+               "filterMode": "customFilter",
+               "mode": "all",
+               "refreshContent": {"refreshContent": true},
+               "refreshInterval": 300,
+               "relationshipMode": {"relationshipMode": 0},
+               "resource": [],
+               "selectFirstRow": {"selectFirstRow": true},
+               "selfProvider": {"selfProvider": false},
+               "tagFilter": {
+                  "path": ["/source/kind/kind:resourceKind:id:0_::_"],
+                  "value": {
+                     "adapterInstance": [],
+                     "adapterKind": [],
+                     "bus": [],
+                     "collector": [],
+                     "day": [],
+                     "exclaim": false,
+                     "healthRange": [],
+                     "kind": ["resourceKind:id:0_::_"],
+                     "maintenanceSchedule": [],
+                     "state": [],
+                     "status": [],
+                     "tag": [],
+                     "tier": []
+                  }
+               },
+               "title": "Select a Distributed Switch"
+            },
+            "gridsterCoords": {
+               "h": 9,
+               "w": 4,
+               "x": 1,
+               "y": 1
+            },
+            "height": 495,
+            "id": "bb4bd75e-c412-49fe-8e3f-228147bccda2",
+            "states": [{
+               "key": "permResGrid_widget_a9dfb2bb-5cac-4370-90bb-d46378d56d37_bb4bd75e-c412-49fe-8e3f-228147bccda2",
+               "value": "o%3Acolumns%3Da%253Ao%25253Aid%25253Ds%2525253Ah1%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah2%25255Ewidth%25253Dn%2525253A154%255Eo%25253Aid%25253Ds%2525253Ah3%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah4%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah5%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah6%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah7%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah8%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah9%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah10%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah11%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah12%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah13%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah14%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah15%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah16%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah17%25255Ehidden%25253Db%2525253A0%25255Ewidth%25253Dn%2525253A71%255Eo%25253Aid%25253Ds%2525253Ah18%25255Ehidden%25253Db%2525253A0%25255Ewidth%25253Dn%2525253A67%255Eo%25253Aid%25253Ds%2525253Ah19%25255Ehidden%25253Db%2525253A0%25255Ewidth%25253Dn%2525253A621%255Eo%25253Aid%25253Ds%2525253Ah20%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah21%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah22%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah23%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah24%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah25%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah26%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah27%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah28%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah29%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah30%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah31%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah32%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah33%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah34%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah35%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah36%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah37%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah38%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah39%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah40%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah41%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah42%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah43%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah44%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah45%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah46%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100"
+            }],
+            "title": "Select a Distributed Switch",
+            "type": "ResourceList",
+            "x": 1,
+            "y": 1
+         },
+         {
+            "collapsed": false,
+            "config": {
+               "chartViewItems": [],
+               "isUpdatedView": true,
+               "refreshContent": {"refreshContent": false},
+               "refreshInterval": 300,
+               "resource": null,
+               "selectFirstRow": {"selectFirstRow": false},
+               "selfProvider": {"selfProvider": false},
+               "title": "Distributed Port Groups on the Switch",
+               "traversalSpecId": "",
+               "viewDefinitionId": "69ed8c82-7233-41a0-b461-a8b50d0a3c32"
+            },
+            "gridsterCoords": {
+               "h": 9,
+               "w": 4,
+               "x": 9,
+               "y": 1
+            },
+            "height": 495,
+            "id": "bc98822d-99e0-44ed-848b-9b3503ea2c42",
+            "title": "Distributed Port Groups on the Switch",
+            "type": "View",
+            "x": 3,
+            "y": 1
+         },
+         {
+            "collapsed": false,
+            "config": {
+               "custom": [],
+               "resource": null,
+               "selfProvider": {"selfProvider": false},
+               "title": "ESXi Hosts using the Selected Switch",
+               "viewDefinitionId": "42f8a97e-048a-4cb2-82cc-db121958722c"
+            },
+            "gridsterCoords": {
+               "h": 9,
+               "w": 4,
+               "x": 5,
+               "y": 1
+            },
+            "height": 495,
+            "id": "330b7e82-2618-49ce-a029-e3dc6791b187",
+            "title": "ESXi Hosts using the Selected Switch",
+            "type": "View",
+            "x": 2,
+            "y": 1
+         },
+         {
+            "collapsed": false,
+            "config": {
+               "chartViewItems": [],
+               "isUpdatedView": true,
+               "refreshContent": {"refreshContent": false},
+               "refreshInterval": 300,
+               "resource": null,
+               "selectFirstRow": {"selectFirstRow": false},
+               "selfProvider": {"selfProvider": false},
+               "title": "VMs Using the Selected Switch",
+               "traversalSpecId": "",
+               "viewDefinitionId": "f982ee15-5502-49e2-8efc-0a405b5bfa83"
+            },
+            "gridsterCoords": {
+               "h": 9,
+               "w": 12,
+               "x": 1,
+               "y": 10
+            },
+            "height": 495,
+            "id": "3595de46-cbba-4c7b-8c4c-2f2e6bbd8b2f",
+            "title": "VMs Using the Selected Switch",
+            "type": "View",
+            "x": 4,
+            "y": 1
+         }
+      ]
+   }],
+   "entries": {"resourceKind": [{
+      "adapterKindKey": "VMWARE",
+      "internalId": "resourceKind:id:0_::_",
+      "resourceKindKey": "VmwareDistributedVirtualSwitch"
+   }]},
+   "uuid": "4bc35ae4-ab56-418b-bee8-4dca76600546"
+}
